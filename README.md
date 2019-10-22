@@ -9,4 +9,5 @@
 5. Entrega no final da semana 21~25/10/2019
 
 **Código:** {reprograma} e Dani Karasawa
-<img src=”https://media.giphy.com/media/MFDdGevUKGe493pgiU/giphy.gif” width = '50px'>
+
+![halloween](https://user-images.githubusercontent.com/47070250/67342556-df83a180-f508-11e9-8b91-9bf599e9a76d.gif)
