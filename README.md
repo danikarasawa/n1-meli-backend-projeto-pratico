@@ -16,10 +16,13 @@ Linguagens > JavaScript, NodeJs
 Dependências > Nodemon, Express
 
 <h3>Endpoints</h3>
-/ > toda a lista desenvolvida
-/pronta > a lista a partir das tarefas concluídas
-/:id > apresentar o objeto inteiro a partir do seu ID
-/buscar/:nome > apresentar o objeto inteiro a partir do nome da Colaboradora 
+* **/** > toda a lista desenvolvida
+* **/pronta** > a lista a partir das tarefas concluídas
+* **/:id** > apresentar o objeto inteiro a partir do seu ID
+* **/buscar/:nome** > apresentar o objeto inteiro a partir do nome da Colaboradora 
+
+<h3>Postman</h3>
+Em breve
 
 **Código:** {reprograma} e Dani Karasawa
 
