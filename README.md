@@ -1,25 +1,28 @@
-<h1>{reprograma} | Mercado Livre (MELI) | Projeto Prático 1.0</h1>
+<h1>{reprograma} | Mercado Livre (MELI) | Curso de Back-end | Projeto Prático 1.0</h1>
 
-1. Desenvolvimento de API
-2. Proposta do projeto apresentada pela {reprograma}
-3. Desenvolvimento baseado em nossas aulas até o momento 
-4. Desafios obrigatórios e desafios extras
-<<<<<<< HEAD
+1. Desenvolvimento de API com funções básicas utilizando o verbo GET
+
+2. Desenvolvimento baseado em todo o conteúdo visto em nossas aulas até o momento 
+
+3. Desafios obrigatórios e desafios extras
 -[x] Obrigatórios concluídos em 22/10/2019
 -[x] Extras concluídos em 22/10/2019
-=======
-- [x] Obrigatórios concluídos em 22/10/2019
-- [ ] Extras concluídos em ??/10/2019
->>>>>>> dc3c01172fff796721b0c9a3ee8baf4312655fa1
-5. Entrega no final da semana 21~25/10/2019
+-[ ] Novas atividades extras!
 
-<h2>Tecnologias utilizadas</h2>
-NodeJs, Express
+4. Período do projeto de 21 a 25/10/2019
+
+<h3>Tecnologias utilizadas</h3>
+Linguagens > JavaScript, NodeJs
+Dependências > Nodemon, Express
+
+<h3>Endpoints</h3>
+/ > toda a lista desenvolvida
+/pronta > a lista a partir das tarefas concluídas
+/:id > apresentar o objeto inteiro a partir do seu ID
+/buscar/:nome > apresentar o objeto inteiro a partir do nome da Colaboradora 
 
 **Código:** {reprograma} e Dani Karasawa
-<<<<<<< HEAD
-<img src=”https://media.giphy.com/media/MFDdGevUKGe493pgiU/giphy.gif”>
-=======
 
-![halloween](https://user-images.githubusercontent.com/47070250/67342556-df83a180-f508-11e9-8b91-9bf599e9a76d.gif)
->>>>>>> dc3c01172fff796721b0c9a3ee8baf4312655fa1
+<p align="center">
+  <img src="https://media.giphy.com/media/MFDdGevUKGe493pgiU/giphy.gif" width="50" title="hover text" alt="Character of Halloween Special Episode of the True and the Rainbow Kingdom animation series">
+</p>

@@ -1,8 +1,6 @@
 const express = require("express")
 const app = express()
 
-//CRIAÇÃO DE ROTAS PADRÃO E OUTRAS NECESSÁRIAS
-
 const index = require("./routes/index")
 const tarefas = require("./routes/tarefasRoute")
 
@@ -15,4 +13,4 @@ app.use("*", function(req, res, next){
 app.use("/", index)
 app.use("/tarefas", tarefas)
 
-module.exports = app //SE QUISER USAR EM OUTRO LUGAR É SÓ CHAMAR O MÓDULO
+module.exports = app

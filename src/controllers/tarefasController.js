@@ -20,13 +20,6 @@ exports.getDone = (req, res) => {
     res.status(200).send(tarefaPronta)
 }
 
-//VERIFICAR ESSE CÓDIGO 
-// exports.getName = (req, res) => {
-//     const nomeColab = tarefas.map(item => item.nomeColaboradora)
-//     res.status(200).send(nomeColab) 
-
-// }
-
 exports.getName = (req, res) => {
     const nomeColaboradora = req.params.nome
 
@@ -36,4 +29,3 @@ exports.getName = (req, res) => {
 
     res.status(200).send(tarefas.filter(tarefa => tarefa.nomeColaboradora == nomeColaboradora))
 }
-

@@ -9,4 +9,3 @@ router.get('/:id', controllerTarefas.getById)
 router.get('/buscar/:nome', controllerTarefas.getName)
 
 module.exports = router
-
