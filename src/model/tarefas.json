@@ -3,27 +3,31 @@
         "id": 1,
         "dataInclusao": "24/06/2019",
         "concluido": "false",
-        "descricao": "Tarefa 1 - Via São João! Festa Junina!"
+        "descricao": "Tarefa 1 - Via São João! Festa Junina!",
+        "nomeColaboradora": "Tania"
     },
 
     {
         "id": 2,
         "dataInclusao": "30/07/2019",
-        "concluido": "false",
-        "descricao": "Tarefa 2 - Dia da Amiga~"
+        "concluido": "true",
+        "descricao": "Tarefa 2 - Dia da Amiga~",
+        "nomeColaboradora": "Alice"
     },
 
     {
         "id": 3,
         "dataInclusao": "31/10/2019",
-        "concluido": "false",
-        "descricao": "Tarefa 3 - Happy Halloween~"
+        "concluido": "true",
+        "descricao": "Tarefa 3 - Happy Halloween~",
+        "nomeColaboradora": "Gabriela"
     },
 
     {
         "id": 4,
         "dataInclusao": "25/12/2019",
         "concluido": "false",
-        "descricao": "Tarefa 4 - Merry X-mas!"
+        "descricao": "Tarefa 4 - Merry X-mas!",
+        "nomeColaboradora": "Jessica"
     }
 ]

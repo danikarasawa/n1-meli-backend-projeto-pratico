@@ -4,9 +4,12 @@
 2. Proposta do projeto apresentada pela {reprograma}
 3. Desenvolvimento baseado em nossas aulas até o momento 
 4. Desafios obrigatórios e desafios extras
-- [x] Obrigatórios concluídos em 22/10/2019
-- [] Extras concluídos em ??/10/2019
+-[x] Obrigatórios concluídos em 22/10/2019
+-[x] Extras concluídos em 22/10/2019
 5. Entrega no final da semana 21~25/10/2019
 
+<h2>Tecnologias utilizadas</h2>
+NodeJs, Express
+
 **Código:** {reprograma} e Dani Karasawa
-<img src=”https://media.giphy.com/media/MFDdGevUKGe493pgiU/giphy.gif” width = '50px'>
+<img src=”https://media.giphy.com/media/MFDdGevUKGe493pgiU/giphy.gif”>

@@ -3,10 +3,8 @@ const app = express()
 
 //CRIAÇÃO DE ROTAS PADRÃO E OUTRAS NECESSÁRIAS
 
-//AJUSTAR ISSO PARA TAREFAS!!!
-// const index = require("./routes/index")
-// const alunas = require("./routes/alunasRoute")
-// const professoras = require("./routes/professorasRoute")
+const index = require("./routes/index")
+const tarefas = require("./routes/tarefasRoute")
 
 app.use("*", function(req, res, next){
     res.header("Access-Control-Allow-Origin", "*")
@@ -15,7 +13,6 @@ app.use("*", function(req, res, next){
 })
 
 app.use("/", index)
-app.use("/alunas", alunas)
-app.use("/professoras", professoras)
+app.use("/tarefas", tarefas)
 
 module.exports = app //SE QUISER USAR EM OUTRO LUGAR É SÓ CHAMAR O MÓDULO
