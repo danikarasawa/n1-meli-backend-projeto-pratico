@@ -24,5 +24,5 @@ Dependências > Nodemon, Express
 **Código:** {reprograma} e Dani Karasawa
 
 <p align="center">
-  <img src="https://media.giphy.com/media/MFDdGevUKGe493pgiU/giphy.gif" width="50" title="hover text" alt="Character of Halloween Special Episode of the True and the Rainbow Kingdom animation series">
+  <img src="https://media.giphy.com/media/MFDdGevUKGe493pgiU/giphy.gif" width="200" title="Happy Halloween~" alt="Character of Halloween Special Episode of the True and the Rainbow Kingdom animation series">
 </p>
