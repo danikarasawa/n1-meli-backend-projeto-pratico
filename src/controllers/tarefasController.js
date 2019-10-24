@@ -31,7 +31,9 @@ exports.getName = (req, res) => {
 }
 
 exports.getData = (req, res) => {
+    
     const tarefasData = tarefas.sort((a, b) => {
+
         if (new Date(a.dataInclusao) > new Date(b.dataInclusao)) {
             return 1;
         }
@@ -42,6 +44,58 @@ exports.getData = (req, res) => {
     });
     res.status(200).send(tarefasData);
 };
+
+// OLHAR ESSE LINK > https://en.proft.me/2015/11/14/sorting-array-objects-number-string-date-javascrip/
+
+
+
+
+// exports.getJobDone = (req, res) => {
+//     const tarefaPronta = tarefas.filter(tarefa => tarefa.concluido == "true")
+//     const inclusao = new Date(tarefaPronta[2], tarefaPronta[1] - 1, tarefaPronta[0])
+
+// CODIGO DA CAROL JANDOSO
+// function transformarConclusaoEmDate(fim){
+//     const conclusaoSplitada = fim.split('/');
+//     const conclusao = new Date(conclusaoSplitada[2], conclusaoSplitada[1] - 1, conclusaoSplitada[0]);
+//     return conclusao;
+// };
+
+// function transformarInclusaoEmDate(inicio){
+//     const inclusaoSplitada = inicio.split('/');
+//     const inclusao = new Date(inclusaoSplitada[2], inclusaoSplitada[1] - 1, inclusaoSplitada[0]);
+//     return inclusao;
+// };
+
+// function tempoParaConclusaoEmDias(conclusao, inclusao) {
+//     const diasEmMilissegundos = 86400000;
+//     return (conclusao - inclusao) / diasEmMilissegundos;
+// };
+
+// exports.get = (req, res) => {
+//     tarefas.forEach(item => item.concluidoEm = transformarConclusaoEmDate(item.concluidoEm));
+//     tarefas.forEach(item => item.dataInclusao = transformarInclusaoEmDate(item.dataInclusao))
+
+//     tarefas.forEach(item => item.tempoConclusao = tempoParaConclusaoEmDias(item.concluidoEm, item.dataInclusao));
+    
+//     tarefas.sort((a,b) => {
+//         return (a.dataInclusao < b.dataInclusao) ? 1 : (a.dataInclusao > b.dataInclusao) ? -1 : 0
+//     });
+    
+//     res.status(200).send(tarefas);
+// };
+
+
+
+
+// }
+
+
+// dataInclusao
+// dataConcluido
+// concluido
+// diasTrabalhados
+
 
 //https://en.proft.me/2015/11/14/sorting-array-objects-number-string-date-javascrip/
 //https://flaviocopes.com/how-to-sort-array-by-date-javascript/
