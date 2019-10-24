@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "1421e833-5729-4b8b-bc9b-455e6ef6294b",
+		"name": "reprograma.myspace",
+		"description": "Atividades do curso {reprograma} + MELI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tarefas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tarefas/buscar/Alice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tarefas",
+						"buscar",
+						"Alice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TarefasID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tarefas/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tarefas",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TarefasPronta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tarefas/pronta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tarefas",
+						"pronta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TarefasBuscar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tarefas/buscar/Alice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tarefas",
+						"buscar",
+						"Alice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TarefasDataOrder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/tarefas/data",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tarefas",
+						"data"
+					]
+				},
+				"description": "\t"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
