@@ -30,72 +30,48 @@ exports.getName = (req, res) => {
     res.status(200).send(tarefas.filter(tarefa => tarefa.nomeColaboradora == nomeColaboradora))
 }
 
-exports.getData = (req, res) => {
-    
-    const tarefasData = tarefas.sort((a, b) => {
-
-        if (new Date(a.dataInclusao) > new Date(b.dataInclusao)) {
-            return 1;
-        }
-        if (new Date(a.dataInclusao) < new Date(b.dataInclusao)) {
-            return -1;
-        }
-        return 0;
-    });
-    res.status(200).send(tarefasData);
+// CODIGO DA CAROL JANDOSO
+function transformarConclusaoEmDate(fim) {
+    const splitDone0 = fim.split('/');
+    const conclusao = new Date(splitDone0[2], splitDone0[1] - 1, splitDone0[0]);
+    return conclusao;
 };
 
-// OLHAR ESSE LINK > https://en.proft.me/2015/11/14/sorting-array-objects-number-string-date-javascrip/
+function transformarInclusaoEmDate(inicio) {
+    const splitDone = inicio.split('/');
+    const inclusao = new Date(splitDone[2], splitDone[1] - 1, splitDone[0]);
+    return inclusao;
+};
 
+function tempoParaConclusaoEmDias(conclusao, inclusao) {
+    const diasEmMilissegundos = 86400000;
+    return ((conclusao - inclusao) / diasEmMilissegundos).toFixed(0);
+};
 
+exports.getData = (req, res) => {
+    tarefas.forEach(item => item.dataConcluido = transformarConclusaoEmDate(item.dataConcluido));
+    tarefas.forEach(item => item.dataInclusao = transformarInclusaoEmDate(item.dataInclusao))
 
+    tarefas.forEach(item => item.diasTrabalhados = tempoParaConclusaoEmDias(item.dataConcluido, item.dataInclusao));
 
-// exports.getJobDone = (req, res) => {
-//     const tarefaPronta = tarefas.filter(tarefa => tarefa.concluido == "true")
-//     const inclusao = new Date(tarefaPronta[2], tarefaPronta[1] - 1, tarefaPronta[0])
+    tarefas.sort((a, b) => {
+        return (a.dataInclusao > b.dataInclusao) ? 1 : (a.dataInclusao < b.dataInclusao) ? -1 : 0
+    });
 
-// CODIGO DA CAROL JANDOSO
-// function transformarConclusaoEmDate(fim){
-//     const conclusaoSplitada = fim.split('/');
-//     const conclusao = new Date(conclusaoSplitada[2], conclusaoSplitada[1] - 1, conclusaoSplitada[0]);
-//     return conclusao;
-// };
-
-// function transformarInclusaoEmDate(inicio){
-//     const inclusaoSplitada = inicio.split('/');
-//     const inclusao = new Date(inclusaoSplitada[2], inclusaoSplitada[1] - 1, inclusaoSplitada[0]);
-//     return inclusao;
-// };
-
-// function tempoParaConclusaoEmDias(conclusao, inclusao) {
-//     const diasEmMilissegundos = 86400000;
-//     return (conclusao - inclusao) / diasEmMilissegundos;
-// };
-
-// exports.get = (req, res) => {
-//     tarefas.forEach(item => item.concluidoEm = transformarConclusaoEmDate(item.concluidoEm));
-//     tarefas.forEach(item => item.dataInclusao = transformarInclusaoEmDate(item.dataInclusao))
-
-//     tarefas.forEach(item => item.tempoConclusao = tempoParaConclusaoEmDias(item.concluidoEm, item.dataInclusao));
-    
-//     tarefas.sort((a,b) => {
-//         return (a.dataInclusao < b.dataInclusao) ? 1 : (a.dataInclusao > b.dataInclusao) ? -1 : 0
-//     });
-    
-//     res.status(200).send(tarefas);
-// };
-
-
-
-
-// }
-
+    res.status(200).send(tarefas);
+};
 
 // dataInclusao
 // dataConcluido
 // concluido
 // diasTrabalhados
 
+//mapear por dataInclusao
+//aplicar split 
+//mostrar a nossa lista ordenada 
+
+//calcular da data mais recente até a mais antiga 
+//mostra a nossa lista ordenada 
 
 //https://en.proft.me/2015/11/14/sorting-array-objects-number-string-date-javascrip/
 //https://flaviocopes.com/how-to-sort-array-by-date-javascript/
@@ -107,11 +83,6 @@ exports.getData = (req, res) => {
 //SOLUCAO PARCIAL HELENA STRADA
 // console.log(tarefas.map(t => t.dataInclusao))
 // res.status(200).send();
-
-//dataInclusao 
-//mapear por dataInclusao
-//calcular da data mais recente até a mais antiga 
-//mostra a nossa lista ordenada 
 
 // VERIFICAR ESSA OPÇÃO POR DATA DE CONCLUSÃO 
 //     const tarefaPronta = tarefas.filter(tarefa => tarefa.concluido == "true")

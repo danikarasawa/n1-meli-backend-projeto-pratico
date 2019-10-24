@@ -7,7 +7,7 @@
 3. Desafios obrigatórios e desafios extras
 - [x] Obrigatórios concluídos em 22/10/2019
 - [x] Extras concluídos em 22/10/2019
-- [x] Novas atividades extras! Concluídas em parceria com a ![Carol Jandoso](https://github.com/Jandoso) em 24/10/2019
+- [x] Novas atividades extras! Concluídas em parceria com a [Carol Jandoso](https://github.com/Jandoso) em 24/10/2019
 
 4. Período do projeto de 21 a 25/10/2019
 
